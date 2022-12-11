@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width">
+  <title>potal</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+   <!--React src--> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<style>
+   body{
+   background-color:lightgreen;
+   text-align:center;
+}
+
+h1{
+    text-align:center;
+    color:green;
+    background-color:lightblue;
+    margin-top:0px;
+    padding-top:50px;
+    padding-bottom:20px;
+}
+
+jumbotron {
+    background-color:lighterblue;
+}
+
+
+button:hover {
+  opacity:1;
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+}
+h2{
+    color:green;
+}
+nav {
+    background-color:rgb(567,899,88);
+    width:100%;
+    height:40px;
+    display:flex;
+    list-style:none;
+    padding:10px;
+    margin-right:200px;
+    margin-left:200px
+    padding-top:10px;
+    padding-right:200px;
+    padding-left:20px;
+    text-indent:28px;
+}
+  
+
+
+.jumbotron {
+    background-color:lightpink;
+}
+.mapouter{
+     position:relative;
+     text-align:right;
+     width:350px;
+     height:400px;
+     }
+     .gmap_canvas{
+     overflow:hidden;
+     background:none!important;
+     width:350px;
+     height:400px;
+     }
+     .gmap_iframe {
+     width:350px!important;
+     height:400px!important;
+     }
+</style>
+
+
+</head>
+  <script src="script.js"></script>
+<body>
+  <script src="js/service.js">
+<script src="js/app.js"></script>
+
+  
+ 
+  <!--nav button-->
+    
+        <div id="affixed" data-
+spy="affix">  
+          <div class="container">
+          <nav>
+<a href="#">Blog</a>
+<a href="#">Home</a>
+
+<a href="#">Contact</a>
+<a href="#">Careers</a>
+          </nav>
+</div>
+        </div>
+      
+    <div id="root"></div> 
+<script type="text/babel">
+ReactDOM.render(
+  <h1>G.D.S.S CHARANCHI</h1>,
+  document.getElementById('root')
+);
+</script> 
+<hr>
+  
+<br />
+  
+  <!--j.subject-->
+        <div class="jumbotron">
+            
+            <h2>Junior Secondary School Subject</h2>
+<ol>
+<li>ENGLISH</li>       <li>MATHEMATICS</li>
+<li>HAUSA</li>
+  <li>ARABIC</li>
+  <li>ISLAMIC</li>
+ <li>BASIC TECHNOLOGY</li>
+ <li>BASIC SCIENCE</li>
+ <li>CIVIC EDUCATION</li>
+ <li>COMPUTER</li>
+<li>COMPUTER</li>
+ </ol>
+</div>
+
+        
+  <!--s.subject-->
+        <div class="jumbotron">
+        <h2>Senior Secondary School Subject</h2>
+  <ol>
+ <li>ENGLISH</li>      <li>MATHEMATICS</li>
+<li>HAUSA</li>
+ <li>ISLAMIC</li>
+ <li>CIVIC EDUCATION</li>
+ <li>BIOLOGY</li>
+ <li>ECONOMICS</li>
+ <li>PHYSICS</li>
+ <li>CHEMISTRY</li>
+ <li>GOVERNMENT</li>
+ <li>COMPUTER</li>
+<li>ANIMAL HUSBANDRY</li>
+            </ol>
+        </div>
+
+  <!--map-->
+<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q= Government Day Secondary School Cheranchi;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/word-counter">Word Counter</a>
+            
+        </div>   
+     </div>
+  
+ <br>
+  <div class="jumbotron">
+      <p>
+The study investigated the extent of principals’ assessment of professional development needs as a necessity for improving teaching and learning in secondary schools in Nigeria. The study was carried out in 254 secondary schools in Anambra State. Descriptive survey research design was adopted for the study. The population comprised 254 principals and 7161 teachers in the public secondary schools.</p>
+  </div>
+  
+  <div class="jumbotron"></div>
+  
+  <!--student information-->
+<button onclick="document.getElementById('student-name').style.display='block'">Register</button>
+<div id="student-name" class="modal">
+  
+  <span onclick="document.getElementById('student-name').style.display='none'" class="close" title="Close Modal">CHARANCHI</span>
+  <form class="modal-content" action="/action_page.php" id="student-name">
+  <p><b><u>Enter the student information.</u></b></p>
+    <input type="text" value="first name"><br /><br>
+    <input type="text" value="second name"><br /><br/>
+    <input type="num" value="register number"><br />  <br>
+<input type="text" value="class"><br>
+ <br> 
+    <label>Date:</label>
+     <input type="date"  placeholder="dd/mm/yyyy"><br /><br>
+     
+     <!--primary school list-->
+ <select class="form-control" id="primary">
+ <option>sellect Primary </option>
+<option>Model Primary</option>
+<option>Pilot Primary</option>
+<option>Girls Primary</option>
+<option>Anex Primary</option>
+<option>Koda Model Primary</option>
+          </select>
+          <br />
+          
+          <!--charanchi wards-->
+ <select class="form-control" id="wards">
+            <option>Sellect wards</option>         <option>Charanchi</option>
+<option>Radda</option>             <option>Banye</option>         <option>Kuraye</option>
+ <option>Koda</option>       <option>Ganuwa</option>
+<option>Majen wayya</option>
+<option>Safana</option>
+<option>Tsakatsa</option>
+<option>Doka</option>
+</select><br />
+
+    <!--vellages-->
+    <select class="form-control" id="vellages">
+ <option>sellect vellage </option>
+      <option>Charanchi</option>
+      <option>Mazaga</option>
+      <option>Sake</option>
+      <option>Yarranda</option>
+      <option>Tiki</option>
+    </select>
+
+    <label for="avatar">Choose a profile picture:</label>
+<input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
+<hr>
+ 
+          
+<!--date of Birth-->
+<label>Date of Birth</label>
+<input type="date"placeholder="dd/mm/yyyy">
+          <br />
+        
+      <!--checkbox-->  
+ <label class="radio-inline"><input type="radio" name="rb">male</label>
+        <label class="radio-inline"><input type="radio" name="rb">female</label>
+        
+        <div class="checkbox">
+          <label><input type="checkbox">tems and <b><b>policy</b></label><br />
+          
+       <div id="01">
+       <script type="text/babel">
+           ReactDOM.render(
+  <p> Make sure that all the student information fill correctly.</p>,
+  document.getElementById('01')
+);
+</script>
+       </div>
+          
+          <hr>
+          <button type="button" onclick="document.getElementById('student-name').style.display='none'" class="submitbtn">submit</button>
+          
+          </div>
+      </form>
+    </div> 
+
+  <hr>
+<p> Copyright © 2022 G.D.S.S Charanchi. All Rights Reserved
+</p>
+  <p>powered By cromajetEx</p>
+  
+</body>
+</html>
